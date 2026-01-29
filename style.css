@@ -5,7 +5,8 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-ul {
+ul,
+ol {
     list-style-position: inside;
     padding: 0;
 }
@@ -13,17 +14,31 @@ ul {
 li {
     padding-left: 1.2em;
     text-indent: -1.4em;
+    margin-bottom: 5px;
+}
+
+ol li {
+    text-indent: -1em;
+    padding-left: 10px;
 }
 
 body {
     background-color: rgb(245, 251, 230);
 }
 
+
 /* Header and Title */
 .header {
     color: rgb(254, 127, 45);
     padding: 5px;
     margin-bottom: 50px;
+}
+
+.header.pages {
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    margin-top: 40px;
+    text-align: center;
 }
 
 /* Recipe list */
@@ -54,4 +69,28 @@ body {
 .list li a:hover {
     color: white;
     text-decoration: none;
+}
+
+/* pages */
+
+.hero-image {
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.hero-image img {
+    flex-basis: 720px;
+    flex-shrink: 1;
+    min-width: 100px;
+}
+
+.pages-style {
+    padding: 50px;
+}
+
+.pages-style h2 {
+    text-indent: -0.5em;
+    margin: 15px 0px;
 }
