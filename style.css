@@ -107,3 +107,11 @@
     color: #331D1D;
     text-align: center;
 }
+
+.nav {
+    display: flex;
+    gap: 8px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
