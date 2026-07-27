@@ -135,3 +135,30 @@ h1.logo-text {
     font-weight: 900;
     text-shadow: 2px 2px #331D1D;
 }
+
+/* Recipes page style */
+
+.recipes-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 800px;
+    border: 2px solid #331D1D;
+    background-color: #E1B486;
+    color: #331D1D;
+    border-radius: 8px;
+    padding: 16px 36px;
+    gap: 16px;
+}
+
+.recipes-content h1 {
+    font-weight: 900;
+}
+
+.recipes-content h2 {
+    font-weight: 700;
+}
+
+.recipes-content img {
+    align-self: center;
+}
