@@ -31,6 +31,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    position: relative;
     /* padding-top: 16px; */
 }
 
@@ -113,7 +114,9 @@
     justify-content: space-between;
     font-family: "Inter", sans-serif;
     font-weight: 700;
-    padding: 8px 24px;
+    padding: 4px 16px;
+    position: sticky;
+    top: 0;
 }
 
 .nav a {
@@ -134,6 +137,7 @@ h1.logo-text {
     font-family: "Inter", sans-serif;
     font-weight: 900;
     text-shadow: 2px 2px #331D1D;
+    font-size: 1.5em;
 }
 
 /* Recipes page style */
@@ -147,7 +151,7 @@ h1.logo-text {
     background-color: #E1B486;
     color: #331D1D;
     border-radius: 8px;
-    padding: 16px 36px;
+    padding: 16px 32px 40px 32px;
     gap: 16px;
 }
 
@@ -161,4 +165,56 @@ h1.logo-text {
 
 .recipes-content img {
     align-self: center;
+}
+
+.recipes-content ul,
+.recipes-content ol {
+    padding-left: 0;
+}
+
+.recipes-content li {
+    list-style: none;
+    position: relative;
+    padding-left: 1.5em;
+}
+
+.recipes-content ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0.3em;
+}
+
+.recipes-content ol {
+    counter-reset: step;
+}
+
+.recipes-content ol li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 1.5em;
+}
+
+.recipes-content ol li::before {
+    content: counter(step)".";
+    position: absolute;
+    left: 0;
+}
+
+.recipes-content h2 {
+    margin-bottom: 8px;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.recipes-content p {
+    font-size: 1em;
+}
+
+.recipes-content p::first-letter {
+    margin-left: 0.5em;
+}
+
+.food-picture {
+    width: 750px;
+    border: 2px solid #331D1D;
 }
