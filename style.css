@@ -30,10 +30,11 @@
 .container {
     display: flex;
     flex-direction: column;
-    padding-top: 16px;
+    gap: 24px;
+    /* padding-top: 16px; */
 }
 
-.nav,
+/* .nav, */
 .recipes-list {
     min-width: 500px;
     align-self: center;
@@ -63,8 +64,7 @@
     list-style: none;
 }
 
-.recipes-list a,
-.nav a {
+.recipes-list a {
     text-decoration: none;
     color: #331D1D;
 }
@@ -110,8 +110,28 @@
 
 .nav {
     display: flex;
-    gap: 8px;
+    justify-content: space-between;
     font-family: "Inter", sans-serif;
     font-weight: 700;
+    padding: 8px 24px;
 }
 
+.nav a {
+    text-decoration: none;
+    color: #E1B486;
+    text-shadow: 2px 2px #331D1D;
+}
+
+.nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+h1.logo-text {
+    color: #E1B486;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px #331D1D;
+}
