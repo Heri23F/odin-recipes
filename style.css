@@ -224,22 +224,42 @@ h1.logo-text {
 .about {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    justify-content: space-between;
     font-family: "Inter", sans-serif;
     align-self: center;
-    padding: 32px;
+    padding: 16px 32px;
     background-color: #E1B486;
     border: 2px solid #331D1D;
     border-radius: 8px;
     box-shadow: 1px 1px 5px black;
-    max-width: 600px;
+    min-height: 600px;
+    box-sizing: border-box;
 }
 
 .about h1 {
     font-weight: 900;
     text-align: center;
+    font-size: 2em;
+    color: #331D1D;
 }
 
-.about p {
+.text-content {
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 500px;
+    color: #331D1D;
 }
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.svg {
+    width: 32px;
+    align-self: flex-end;
+}
+
