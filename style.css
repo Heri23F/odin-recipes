@@ -218,3 +218,28 @@ h1.logo-text {
     width: 750px;
     border: 2px solid #331D1D;
 }
+
+/* About page styling */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-family: "Inter", sans-serif;
+    align-self: center;
+    padding: 32px;
+    background-color: #E1B486;
+    border: 2px solid #331D1D;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px black;
+    max-width: 600px;
+}
+
+.about h1 {
+    font-weight: 900;
+    text-align: center;
+}
+
+.about p {
+    font-weight: 400;
+}
